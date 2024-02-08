@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    
+<style>
+
+body {
+	
+	margin: 0;
+	display: grid;
+	place-items: center;
+	padding: 20px 20px;
+}
+html,
+body {
+	scroll-behavior: smooth;
+	scroll-padding-top: 20px;
+}
+main > h1 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.accordion {
+	color: #000;
+	background-color: white;
+	width: 400px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	display: grid;
+	grid-template-rows: 0fr 0fr;	
+	border: 2px solid #646060;
+	opacity: 0.9;
+}
+.accordion,
+.wrapper {
+	overflow: hidden;
+}
+.accordion:target {	
+	grid-template-rows: 0fr 1fr;	
+}
+.wrapper {
+	padding-block: 0 0px;
+	padding-inline: 20px;
+}
+.title a {
+	padding: 10px 20px;
+	font-size: 20px;
+	color: currentColor;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	place-items: center;
+}
+
+</style>
+</head>
+<body>
+
+    <main>
+        <h1 style="color:black;font-size: 22px;text-align:center;">Demo</h1>
+        <section class="accordion" id="box1">
+            <h1 class="title"><a href="#box1">Box1</a></h1>
+            
+                <div class="wrapper">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                       
+                    </p>
+                </div>
+           
+        </section>
+    
+        <section class="accordion" id="box2">
+            <h1 class="title"><a href="#box2">Box2</a></h1>
+            
+                <div class="wrapper">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                   
+                </div>
+           
+        </section>
+    
+        <section class="accordion" id="box3">
+            <h1 class="title"><a href="#box3">Box3</a></h1>
+          
+                <div class="wrapper">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    
+                </div>
+            
+        </section>
+    </main>
+
+
+
+
+</body>
+</html>
